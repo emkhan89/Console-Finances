@@ -87,10 +87,14 @@ var finances = [
   ['Feb-2017', 671099],
 ];
 
+
 // pseudo code 
 
 // 1. add a title to the console log followed by a line break.
 // 1a. remember to use console.log else it wont appear. 
+console.log("Financial Analysis")
+console.log("----------------------------")
+// literally just need to add () and "" and thats it.
 
 // 2. add a variable that calculates total # months
 
@@ -109,3 +113,5 @@ var finances = [
 // 6a. 5a. combine primitive data types, how? strings and numbers.
 
 // 7. remember to put any useful links in to my README file.
+
+// Q: is there a way of adding commas in number strings?
