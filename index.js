@@ -86,3 +86,23 @@ var finances = [
   ['Jan-2017', 138230],
   ['Feb-2017', 671099],
 ];
+
+// You have been given a dataset composed of arrays with two fields: Date and Profit/Losses.
+
+// The total number of months included in the dataset.
+    /// need to get it to say 86 months
+    /// finances array has already been defined
+
+// The net total amount of Profit/Losses over the entire period.
+
+// The average of the changes in Profit/Losses over the entire period.
+
+// You will need to track what the total change in profits is from month to month and then find the average.
+
+// (Total/(Number of months - 1))
+
+// The greatest increase in profits (date and amount) over the entire period.
+
+// The greatest decrease in losses (date and amount) over the entire period.
+
+// When you open your code in the browser your resulting analysis should look similar to the following:
