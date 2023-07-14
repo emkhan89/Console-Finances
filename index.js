@@ -107,3 +107,5 @@ var finances = [
 
 // 6. The greatest decrease in losses (date and amount) over the entire period.
 // 6a. 5a. combine primitive data types, how? strings and numbers.
+
+// 7. remember to put any useful links in to my README file.
