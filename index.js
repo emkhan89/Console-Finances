@@ -97,7 +97,7 @@ console.log("----------------------------")
 // literally just need to add () and "" and thats it.
 
 // 2. add a variable that calculates total # months
-
+console.log("Total Months: " + finances.length)
 // 3. net total amount of Profit/Losses over the entire period. 
 // 3a. a maths calculation of some sort. 
 
