@@ -87,24 +87,73 @@ var finances = [
   ['Feb-2017', 671099],
 ];
 
+var months = finances.length; 
+var totalSum = 0;
+var change = 0;
+var average;
+var analysis;
+var previousAmount = 0;
+var netChangeSum = 0;
+var least = ["", 9999999999999];
+var greatest = ["", 0];
+var currentMonth ;
+var amount;
+var date;
 
 // pseudo code 
 
 // 1. add a title to the console log followed by a line break.
 // 1a. remember to use console.log else it wont appear. 
-console.log("Financial Analysis")
-console.log("----------------------------")
+// console.log("Financial Analysis")
+// console.log("----------------------------")
 // literally just need to add () and "" and thats it.
 
 // 2. add a variable that calculates total # months
-console.log("Total Months: " + finances.length)
+// console.log("Total Months: " + finances.length);
 // 3. net total amount of Profit/Losses over the entire period. 
 // 3a. a maths calculation of some sort. 
+// var total = array_sum(finances);
+// console.log (total);
 
+
+for (var i = 0; i < finances.length; i++) {
+  var financesList = finances[i];
+  date = financesList [0];
+  amount = financesList [1];
+  totalSum += amount;
+  ("IN LOOP: ", totalSum)
+  if (i > 0) {
+    change = amount - previousAmount;
+  }
+  previousAmount = amount;
+  netChangeSum += change
+  
+  if (change > greatest[1]) {
+    greatest = [date, change]
+  }
+}
+
+("OUT LOOP: ", totalSum)
+average = Math.round((netChangeSum / (finances.length - 1)) * 100) / 100;
+
+analysis = 
+"Financial Analysis" +
+"\n" +
+"----------------" +
+"\n" +
+"Total Months: " +
+months + 
+"\n" +
+"Total: $" +
+totalSum;
+
+console.log(analysis)
 // 4. The average of the changes in Profit/Losses over the entire period.
 // 4a. will need to track what the total change in profits is from month to month and then find the average.
 
+
 // (Total/(Number of months - 1))
+
 
 // 5. The greatest increase in profits (date and amount) over the entire period.
 // 5a. combine primitive data types, how? strings and numbers. 
