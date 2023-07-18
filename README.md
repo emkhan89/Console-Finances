@@ -8,6 +8,9 @@ For this assignment, we learnt some basic javaScript syntax and functions which 
 
 I added what was supposed to appear in the console.log into the HTML file just as a visual reference. 
 
+## Deployment
+The deployed website can be accessed [here](https://emkhan89.github.io/Console-Finances/).
+
 ## Challenges
 There were definitely some arithmetic equations which i wasnt able to get working and broke my code, which i will need to revisit in the future. 
 
